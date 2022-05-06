@@ -2,9 +2,9 @@ int sensor = A5; // identifying the port of the sensor to get reads from it.
 int buzzer = 3; // identifying the port of the buzzer to take signals and apply the code
 float resistor = 326.6; // set the resistance value that is put in the circuit.
 void setup() {
- pinMode(sensor,INPUT);
- pinMode(buzzer,OUTPUT);
- Serial.begin(9600);
+ pinMode(sensor,INPUT); // set up the sensor as an input tool and get reads
+ pinMode(buzzer,OUTPUT); // set up the buzzer as an output tool that gets signals and notify with changes by making sounds
+ Serial.begin(9600); // the usual signals frequency that the arduino get and send its order to other components
  
 }
 
