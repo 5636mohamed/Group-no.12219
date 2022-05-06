@@ -17,7 +17,7 @@ void loop() {
   Serial.println(temperature); // print the temperature after every .5 second in the serial monitor command.
   delay(500);
 
-  if (!(temperature < 60 && temperature > 50)) {
+  if (!(temperature < 60 && temperature > 50)) { // this is the condition that checks the temperature is not less than 60 and greater than 60 to notify the tester that the temperature is out of the range
     for(int i=0;i<3;i++){
   digitalWrite (buzzer, 1);
   delay (500);
